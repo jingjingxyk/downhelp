@@ -1,5 +1,11 @@
-＃ 使用docker自动构建下载软件
+# 使用docker自动构建下载软件
 
+
+``` 
+
+KUBE_REPO_PREFIX
+```
+# google_containers k8s镜像构建参考
 ``` 
 http://blog.51cto.com/nosmoking/2069950?utm_source=oschina-app
 ```
