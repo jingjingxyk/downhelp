@@ -25,7 +25,7 @@ RUN chmod a+x /endpoint.sh
 #RUN wget https://storage.googleapis.com/kubernetes-helm/helm-v2.11.0-linux-amd64.tar.gz
 #RUN curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /docker-compose
 #RUN curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-Linux-x86_64" -o /down/docker-compose
-RUN curl -L "http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-06-29/2018-06-27-raspbian-stretch-lite.zip" -o /down/2018-06-27-raspbian-stretch-lite.zip
+#RUN curl -L "http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-06-29/2018-06-27-raspbian-stretch-lite.zip" -o /down/2018-06-27-raspbian-stretch-lite.zip
 
 
 
