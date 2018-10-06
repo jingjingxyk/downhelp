@@ -28,6 +28,7 @@ RUN chmod a+x /endpoint.sh
 #RUN curl -L "http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-06-29/2018-06-27-raspbian-stretch-lite.zip" -o /down/2018-06-27-raspbian-stretch-lite.zip
 #RUN curl -L "http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-06-29/2018-06-27-raspbian-stretch-lite.zip" -o /down/2018-06-27-raspbian-stretch-lite.zip
 
-RUN wget http://www.fastcgi.com/dist/fcgi-current.tar.gz  -O /down/fcgi-current.tar.gz
+RUN wget https://opensource.apple.com/source/FastCGI/FastCGI-4/fcgi-2.4.0.tar.gz  -O /down/fcgi-2.4.0.tar.gz
+
 
 ENTRYPOINT exec /endpoint.sh
