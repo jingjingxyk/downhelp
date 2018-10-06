@@ -28,7 +28,6 @@ RUN chmod a+x /endpoint.sh
 #RUN curl -L "http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-06-29/2018-06-27-raspbian-stretch-lite.zip" -o /down/2018-06-27-raspbian-stretch-lite.zip
 #RUN curl -L "http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-06-29/2018-06-27-raspbian-stretch-lite.zip" -o /down/2018-06-27-raspbian-stretch-lite.zip
 
-RUN wget https://subsurface-divelog.org/downloads/Subsurface-4.6.4-x86_64.AppImage  -O /down/Subsurface-4.6.4-x86_64.AppImage
-RUN wget https://github.com/probonopd/AppImages/releases/download/1/Subsurface-4.5.1.251-i386.AppImage  -O /down/Subsurface-4.5.1.251-i386.AppImage
+RUN wget http://www.fastcgi.com/dist/fcgi-current.tar.gz  -O /down/fcgi-current.tar.gz
 
 ENTRYPOINT exec /endpoint.sh
