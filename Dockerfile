@@ -34,6 +34,7 @@ RUN chmod a+x /endpoint.sh
 #RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry-zhCN.git
 #RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry.git
 RUN cd /down &&  git clone https://github.com/BYVoid/OpenCC.git
+
 ENTRYPOINT exec /endpoint.sh
 
 
