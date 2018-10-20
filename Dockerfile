@@ -34,3 +34,9 @@ RUN cd /down &&  git clone https://github.com/KomaBeyond/chinese-poetry-mysql.gi
 RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry-zhCN.git
 RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry.git
 ENTRYPOINT exec /endpoint.sh
+
+
+FROM registry.cn-beijing.aliyuncs.com/jingjingxyk/nginx-autoindex
+COPY --from=0 /down  /usr/share/nginx/html
+
+

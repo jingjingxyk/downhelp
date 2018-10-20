@@ -1,0 +1,7 @@
+version: "3"
+services:
+  scan-down-dir:
+#    image: registry.cn-beijing.aliyuncs.com/jingjingxyk/nginx-autoindex
+    image: jingjingxyk/downhelp:latest
+    ports:
+    - "8057:80"
