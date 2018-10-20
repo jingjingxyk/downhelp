@@ -30,13 +30,16 @@ RUN chmod a+x /endpoint.sh
 
 #RUN wget https://opensource.apple.com/source/FastCGI/FastCGI-4/fcgi-2.4.0.tar.gz  -O /down/fcgi-2.4.0.tar.gz
 
-RUN cd /down &&  git clone https://github.com/KomaBeyond/chinese-poetry-mysql.git
-RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry-zhCN.git
-RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry.git
+#RUN cd /down &&  git clone https://github.com/KomaBeyond/chinese-poetry-mysql.git
+#RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry-zhCN.git
+#RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry.git
+RUN cd /down &&  git clone https://github.com/BYVoid/OpenCC.git
 ENTRYPOINT exec /endpoint.sh
 
 
 FROM registry.cn-beijing.aliyuncs.com/jingjingxyk/nginx-autoindex
+# 清空默认存在文件
+RUN rm -rf /usr/share/nginx/html/*
 COPY --from=0 /down  /usr/share/nginx/html
 
 
