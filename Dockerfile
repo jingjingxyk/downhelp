@@ -33,7 +33,9 @@ RUN chmod a+x /endpoint.sh
 #RUN cd /down &&  git clone https://github.com/KomaBeyond/chinese-poetry-mysql.git
 #RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry-zhCN.git
 #RUN cd /down &&  git clone https://github.com/chinese-poetry/chinese-poetry.git
-RUN cd /down &&  git clone https://github.com/BYVoid/OpenCC.git
+#RUN cd /down &&  git clone https://github.com/BYVoid/OpenCC.git
+RUN cd /down &&  git clone https://github.com/DoubangoTelecom/sipml5.git
+RUN cd /down &&   git clone https://github.com/versatica/JsSIP.git
 
 ENTRYPOINT exec /endpoint.sh
 
