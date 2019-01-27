@@ -37,7 +37,8 @@ RUN chmod a+x /endpoint.sh
 #RUN cd /down &&  git clone https://github.com/DoubangoTelecom/sipml5.git
 #RUN cd /down &&   git clone https://github.com/versatica/JsSIP.git
 #RUN cd /down &&   wget https://github.com/FiloSottile/mkcert/releases/download/v1.1.2/mkcert-v1.1.2-linux-amd64
-RUN cd /down &&   wget https://github.com/asterisk/asterisk/archive/16.0.0.zip -o asterisk-16.0.0.zip
+#RUN cd /down &&   wget https://github.com/asterisk/asterisk/archive/16.0.0.zip -o asterisk-16.0.0.zip
+RUN cd /down &&   wget https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-amd64.tar.gz
 
 ENTRYPOINT exec /endpoint.sh
 
