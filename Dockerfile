@@ -8,7 +8,7 @@ WORKDIR /
 RUN mkdir /down
 ADD ./endpoint.sh /
 RUN chmod a+x /endpoint.sh
-
+WORKDIR /down
 #FROM registry.cn-beijing.aliyuncs.com/jingjingxyk/ubuntu:latest
 
 #RUN wget https://dl.pstmn.io/download/latest/linux64 -o Postman-linux-x64-6.2.2.tar.gz
@@ -39,8 +39,8 @@ RUN chmod a+x /endpoint.sh
 #RUN cd /down &&   wget https://github.com/FiloSottile/mkcert/releases/download/v1.1.2/mkcert-v1.1.2-linux-amd64
 #RUN cd /down &&   wget https://github.com/asterisk/asterisk/archive/16.0.0.zip -o asterisk-16.0.0.zip
 #RUN cd /down &&   wget https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-amd64.tar.gz
-RUN CD /down && wget https://storage.googleapis.com/harbor-releases/release-1.7.0/harbor-offline-installer-v1.7.1.tgz
-
+RUN wget https://storage.googleapis.com/harbor-releases/release-1.7.0/harbor-offline-installer-v1.7.1.tgz
+WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 
 
