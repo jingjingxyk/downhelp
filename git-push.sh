@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
+TIME=`date "+%Y%m%d%H%M"`
 git add .
-git commit -a -m "dockerfile file change "
+git commit -a -m "dockerfile file change ${TIME}"
 #git push -u origin master
 
 
-TIME=`date "+%Y%m%d%H%M"`
+
 GIT_REVISION=`git log -1 --pretty=format:"%h"`
 tag_name=release-vdownhelp_${TIME}_${GIT_REVISION}
 echo ${tag_name}
