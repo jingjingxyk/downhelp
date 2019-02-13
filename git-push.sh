@@ -10,6 +10,7 @@ GIT_REVISION=`git log -1 --pretty=format:"%h"`
 tag_name=release-vdownhelp_${TIME}_${GIT_REVISION}
 echo ${tag_name}
 
+
 git push origin master
 
 git tag ${tag_name}
