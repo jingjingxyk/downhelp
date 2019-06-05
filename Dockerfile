@@ -44,6 +44,10 @@ RUN git clone https://github.com/fighting41love/funNLP.git
 RUN git clone https://github.com/CyC2018/CS-Notes.git
 RUN git clone https://github.com/shimohq/chinese-programmer-wrong-pronunciation.git
 RUN git clone https://github.com/imhuster/Enterprise-Registration-Data-of-Chinese-Mainland.git
+RUN git clone https://github.com/haoel/leetcode.git
+RUN git clone https://github.com/MisterBooo/LeetCodeAnimation.git
+RUN git clone https://github.com/huihut/interview.git
+RUN git clone https://github.com/apachecn/AiLearning.git
 WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 
