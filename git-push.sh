@@ -7,7 +7,7 @@ git commit -a -m "dockerfile file change ${TIME}"
 
 
 GIT_REVISION=`git log -1 --pretty=format:"%h"`
-tag_name=release-vdownhelp_${TIME}_${GIT_REVISION}
+tag_name=release-v${TIME}_${GIT_REVISION}
 echo ${tag_name}
 
 
