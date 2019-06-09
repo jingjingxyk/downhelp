@@ -12,8 +12,8 @@ tag_name=release-v${version}
 
 
 echo ${tag_name}
-echo "image=" > .env
-echo ${version} > .env
+echo "IMAGE=" > .env
+echo ${version} >> .env
 
 
 git push origin master
