@@ -49,6 +49,8 @@ WORKDIR /down
 #RUN git clone https://github.com/huihut/interview.git
 #RUN git clone https://github.com/apachecn/AiLearning.git
 RUN wget https://www.7-zip.org/a/7z1900-x64.exe
+RUN wget http://pcdown.ttrar.com/small/windowsloader_ttrar.zip
+RUN wget https://mpv.srsfckn.biz/mpv-x86_64-20181002.7z
 WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 

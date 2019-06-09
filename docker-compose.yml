@@ -5,7 +5,7 @@ services:
 #    image: jingjingxyk/downhelp:latest
 #    image: registry.cn-beijing.aliyuncs.com/jingjingxyk/downhelp:201906052255_04c74d3
 #    image: registry.cn-beijing.aliyuncs.com/jingjingxyk/downhelp:201906091048_c8f78ff
-    image: ${IMAGE}
+    image: "registry.cn-beijing.aliyuncs.com/jingjingxyk/downhelp:${IMAGE}"
     container_name: downhelp
     ports:
     - "8057:80"
