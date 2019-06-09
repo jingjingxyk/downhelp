@@ -3,7 +3,7 @@ services:
   scan-down-dir:
 #    image: registry.cn-beijing.aliyuncs.com/jingjingxyk/nginx-autoindex
 #    image: jingjingxyk/downhelp:latest
-    image: registry.cn-beijing.aliyuncs.com/jingjingxyk/downhelp:downhelp_201902140012_af82526
+    image: registry.cn-beijing.aliyuncs.com/jingjingxyk/downhelp:201906052255_04c74d3
     container_name: downhelp
     ports:
     - "8057:80"

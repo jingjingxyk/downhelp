@@ -40,14 +40,15 @@ WORKDIR /down
 #RUN cd /down &&   wget https://github.com/asterisk/asterisk/archive/16.0.0.zip -o asterisk-16.0.0.zip
 #RUN cd /down &&   wget https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-amd64.tar.gz
 #RUN wget https://storage.googleapis.com/harbor-releases/release-1.7.0/harbor-offline-installer-v1.7.1.tgz
-RUN git clone https://github.com/fighting41love/funNLP.git
-RUN git clone https://github.com/CyC2018/CS-Notes.git
-RUN git clone https://github.com/shimohq/chinese-programmer-wrong-pronunciation.git
-RUN git clone https://github.com/imhuster/Enterprise-Registration-Data-of-Chinese-Mainland.git
-RUN git clone https://github.com/haoel/leetcode.git
-RUN git clone https://github.com/MisterBooo/LeetCodeAnimation.git
-RUN git clone https://github.com/huihut/interview.git
-RUN git clone https://github.com/apachecn/AiLearning.git
+#RUN git clone https://github.com/fighting41love/funNLP.git
+#RUN git clone https://github.com/CyC2018/CS-Notes.git
+#RUN git clone https://github.com/shimohq/chinese-programmer-wrong-pronunciation.git
+#RUN git clone https://github.com/imhuster/Enterprise-Registration-Data-of-Chinese-Mainland.git
+#RUN git clone https://github.com/haoel/leetcode.git
+#RUN git clone https://github.com/MisterBooo/LeetCodeAnimation.git
+#RUN git clone https://github.com/huihut/interview.git
+#RUN git clone https://github.com/apachecn/AiLearning.git
+RUN wget https://www.7-zip.org/a/7z1900-x64.exe
 WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 
