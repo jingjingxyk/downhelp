@@ -51,6 +51,7 @@ WORKDIR /down
 RUN wget https://www.7-zip.org/a/7z1900-x64.exe
 RUN wget http://pcdown.ttrar.com/small/windowsloader_ttrar.zip
 RUN wget https://mpv.srsfckn.biz/mpv-x86_64-20181002.7z
+RUN wget http://js.xiazaicc.com/down2/windows_loader_downcc.zip
 WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 
