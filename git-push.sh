@@ -7,8 +7,13 @@ git commit -a -m "dockerfile file change ${TIME}"
 
 
 GIT_REVISION=`git log -1 --pretty=format:"%h"`
-tag_name=release-v${TIME}_${GIT_REVISION}
+version=${TIME}_${GIT_REVISION}
+tag_name=release-v${version}
+
+
 echo ${tag_name}
+echo "image=" > .env
+echo ${version} > .env
 
 
 git push origin master
