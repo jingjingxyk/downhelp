@@ -48,10 +48,11 @@ WORKDIR /down
 #RUN git clone https://github.com/MisterBooo/LeetCodeAnimation.git
 #RUN git clone https://github.com/huihut/interview.git
 #RUN git clone https://github.com/apachecn/AiLearning.git
-RUN wget https://www.7-zip.org/a/7z1900-x64.exe
-RUN wget http://pcdown.ttrar.com/small/windowsloader_ttrar.zip
-RUN wget https://mpv.srsfckn.biz/mpv-x86_64-20181002.7z
-RUN wget http://js.xiazaicc.com/down2/windows_loader_downcc.zip
+#RUN wget https://www.7-zip.org/a/7z1900-x64.exe
+#RUN wget http://pcdown.ttrar.com/small/windowsloader_ttrar.zip
+#RUN wget https://mpv.srsfckn.biz/mpv-x86_64-20181002.7z
+#RUN wget http://js.xiazaicc.com/down2/windows_loader_downcc.zip
+RUN wget http://files.freeswitch.org/disk_images/FreeSWITCH-Deb8-TechPreview-latest.ova
 WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 
