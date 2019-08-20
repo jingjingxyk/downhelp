@@ -1,0 +1,15 @@
+build-dev-with-docker
+/vendor
+/node_modules
+/public/storage
+/public/trial_order_export
+Homestead.yaml
+Homestead.json
+.idea
+composer.lock
+/public/course_export
+/public/xg_cluelist_export
+.DS_Store
+public/download/
+
+.env
