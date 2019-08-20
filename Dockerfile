@@ -54,6 +54,7 @@ WORKDIR /down
 #RUN wget http://js.xiazaicc.com/down2/windows_loader_downcc.zip
 #RUN wget http://files.freeswitch.org/disk_images/FreeSWITCH-Deb8-TechPreview-latest.ova
 RUN git clone https://github.com/swoole/swoole-src.git
+RUN git clone https://github.com/chromium/chromium.git
 WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 
