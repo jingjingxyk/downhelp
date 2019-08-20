@@ -52,7 +52,8 @@ WORKDIR /down
 #RUN wget http://pcdown.ttrar.com/small/windowsloader_ttrar.zip
 #RUN wget https://mpv.srsfckn.biz/mpv-x86_64-20181002.7z
 #RUN wget http://js.xiazaicc.com/down2/windows_loader_downcc.zip
-RUN wget http://files.freeswitch.org/disk_images/FreeSWITCH-Deb8-TechPreview-latest.ova
+#RUN wget http://files.freeswitch.org/disk_images/FreeSWITCH-Deb8-TechPreview-latest.ova
+RUN git clone https://github.com/swoole/swoole-src.git
 WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 

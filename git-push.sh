@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 TIME=`date "+%Y%m%d%H%M"`
 git add .
 git commit -a -m "dockerfile file change ${TIME}"
