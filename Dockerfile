@@ -56,6 +56,7 @@ WORKDIR /down
 #RUN git clone https://github.com/swoole/swoole-src.git
 #RUN git clone https://github.com/chromium/chromium.git
 RUN wget https://github.com/istio/istio/releases/download/1.2.5/istio-1.2.5-linux.tar.gz
+RUN wget https://github.com/docker/compose/releases/download/1.25.0-rc2/docker-compose-Linux-x86_64
 WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 
