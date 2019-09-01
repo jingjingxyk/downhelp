@@ -53,8 +53,9 @@ WORKDIR /down
 #RUN wget https://mpv.srsfckn.biz/mpv-x86_64-20181002.7z
 #RUN wget http://js.xiazaicc.com/down2/windows_loader_downcc.zip
 #RUN wget http://files.freeswitch.org/disk_images/FreeSWITCH-Deb8-TechPreview-latest.ova
-RUN git clone https://github.com/swoole/swoole-src.git
-RUN git clone https://github.com/chromium/chromium.git
+#RUN git clone https://github.com/swoole/swoole-src.git
+#RUN git clone https://github.com/chromium/chromium.git
+RUN wget https://github.com/istio/istio/releases/download/1.2.5/istio-1.2.5-linux.tar.gz
 WORKDIR /
 ENTRYPOINT exec /endpoint.sh
 
